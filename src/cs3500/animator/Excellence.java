@@ -120,7 +120,6 @@ public final class Excellence {
     }
     return null;
   }
-
   private static Integer findTickSpeed(String[] args) {
     for (int i = 0; i < args.length - 1; i++) {
       if (args[i].equals("-speed")) {
