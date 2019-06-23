@@ -1,0 +1,26 @@
+<!--the overall svg width is 700 and height is 500. By default anything
+drawn between (0,0) and (width,height) will be visible -->
+<svg width="700" height="500" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+
+<!--A purple rectangle named P with lower left corner (200,200), width 50 and height 100 -->
+<rect id="P" x="200" y="200" width="50" height="100" fill="rgb(128,0,128)" visibility="visible" >
+    <!-- starting at time=1s, move the rectangle horizontally from x=200 to x=300 in 4 seconds -->
+    <!-- fill=freeze keeps it there after the animation ends -->
+    <animate attributeType="xml" begin="1000ms" dur="4000ms" attributeName="x" from="200" to="300" fill="freeze" />
+    
+    <!--add more animations here for this rectangle using animate tags -->
+</rect>
+
+<!--An orange ellipse named "E" with center at (500,100), x-radius 60 and y-radius 30 -->
+<ellipse id="E" cx="500" cy="100" rx="60" ry="30" fill="rgb(255,128,0)" visibility="visible" >
+    <!-- starting at time=2s, move the ellipse's center from (500,100) to (600,400) in 5 seconds -->
+    <!-- fill=remove, which is the default if you don't specify it, brings the shape back to its
+    original attributes after this animation is over -->
+    <animate attributeType="xml" begin="2000.0ms" dur="5000.0ms" attributeName="cx" from="500" to="600" fill="remove" />
+    <animate attributeType="xml" begin="2000.0ms" dur="5000.0ms" attributeName="cy" from="100" to="400" fill="remove" />
+    <!--add more animations here for this ellipse using animate tags -->
+</ellipse>
+
+</svg>
+
