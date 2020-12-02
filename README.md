@@ -1,5 +1,8 @@
 # Animator
 
+![demo](https://github.com/amywhying/Animator/blob/master/Screenshot%202019-06-23%20at%2012.27.44%20AM.png)
+
+
 Excellence main class:
 
     This is the main method. It goes through the command line arguments and creates the appropriate view
